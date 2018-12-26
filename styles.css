@@ -1,0 +1,6 @@
+.hide {
+    display: none;
+}
+#save .active {
+    border: 1px solid orange;
+}

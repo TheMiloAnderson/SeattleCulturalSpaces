@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Seattle Cultural Spaces</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>Seattle Cultural Spaces</h1>
+            <div id="content">
+                <p id="newVisitText">This simple tool allows you to browse "cultural spaces" (i.e., performance halls, galleries, libraries) in Seattle. You can select a neighborhood below, and save the results for easy reference in the future.</p>
+                <p id="returnVisitText" class="hide">Welcome back! Your neighborhood is <span id="neighborhoodText"></span>. You can browse your previous results, shown below, or you may select a different neighborhood.</p>
+            </div>
+            <div id="select">
+                <select id="neighborhoods">
+                    <option value="" disabled selected>Select a neighborhood</option>
+                </select>
+            </div>
+            <div id="save">
+                <p>Save this query:</p>
+                <button type="button" id="saveButton">SAVE</button>
+            </div>
+            <table id="data" class="hide">
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Type</td>
+                        <td>Address</td>
+                        <td>Website</td>
+                        <td>ADA Compliant?</td>
+                        <td>Serves Alcohol?</td>
+                    </tr>
+                </thead>
+                <tbody id="dataBody"></tbody>
+            </table>
+        </div>
+        <script type="text/javascript" src="scripts.js"></script>
+    </body>
+</html>
